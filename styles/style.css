@@ -1,0 +1,40 @@
+@charset "UTF-8";
+@font-face {
+  font-family: 'Confortaa';
+  src: url('../fonts/Comfortaa-Regular.ttf') format('ttf');
+}
+:root {
+  --bg-color-principal-01: white;
+  --bg-color-principal-02: rgb(180, 180, 180);
+  --bg-color-smartphones: rgb(180, 180, 180);
+  --color-shadow-main: rgba(0, 0, 0, 0.200);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  font-family: 'Confortaa-Regular';
+}
+
+body,
+html {
+  width: 100vw;
+  height: 100vh;
+  background: var(--bg-color-smartphones);
+}
+
+main {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+}
+
+article {
+  width: 993px;
+  height: 100vh;
+  background: var(--bg-color-principal-01);
+
+}

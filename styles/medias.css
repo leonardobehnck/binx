@@ -1,0 +1,22 @@
+@charset "UTF-8";
+/* Set Your Media Query Ranges (Responsive Breakpoints)
+576px for portrait phones.
+768px for tablets.
+992px for laptops.
+1200px for large devices. */
+@import url(style.css);
+
+@media screen and (min-width: 576px) and (max-width: 768px) {
+/* Smartphone */
+
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+/* Tablet */
+
+}
+
+@media screen and (min-width: 992px) {
+  /* Desktop */
+  
+}
