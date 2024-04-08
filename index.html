@@ -1,33 +1,41 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>binx Arquitetura</title>
   <link rel="stylesheet" href="styles/style.css">
+  <link rel="stylesheet" href="styles/medias.css">
+  <script src="scripts/main.js"></script>
+  <script src="scripts/lightmode.js"></script>
+  <!--Links externos-->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
 </head>
 <body>
   <main>
     <article>
      <header>
         <img src="images/logo_branco.jpg" alt="Logotipo">
+        <span class="material-symbols-outlined" id="light_mode" onclick="lightmode()">light_mode</span>      
       </header>
-
       <section>
        <p>
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Autem delectus non ullam assumenda iusto mollitia fuga voluptatibus saepe laboriosam reiciendis quisquam laborum, eius architecto vitae ipsa optio explicabo recusandae excepturi.
-       </p>
-       <p>
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Autem delectus non ullam assumenda iusto mollitia fuga voluptatibus saepe laboriosam reiciendis quisquam laborum, eius architecto vitae ipsa optio explicabo recusandae excepturi.
+        Somos um grupo de Arquitetos que acreditam no poder da tecnologia
+         para transformar o modo de desenvolver os projetos.   
         </p>
-        <p>
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Autem delectus non ullam assumenda iusto mollitia fuga voluptatibus saepe laboriosam reiciendis quisquam laborum, eius architecto vitae ipsa optio explicabo recusandae excepturi.
-       </p>
       </section>
-
-
+      <section id="form">
+        <form>
+        <h3>Entre em contato conosco: </h3>
+          <input type="text" id="name" placeholder="Nome" required>
+          <input type="text" id="email" placeholder="E-mail" required>
+            <textarea type="text" id="msg" placeholder="Mensagem"></textarea>
+        <button onclick="erase()">Limpar</button>
+        <button action="./app/app.rb">Enviar</button>
+      </form>
+      </section>
       <footer>
-
+        <p>Todos os direitos reservados.</p>
       </footer>
     </article>
   </main>

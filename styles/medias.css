@@ -4,15 +4,21 @@
 768px for tablets.
 992px for laptops.
 1200px for large devices. */
-@import url(style.css);
 
-@media screen and (min-width: 576px) and (max-width: 768px) {
+@media screen and (max-width: 768px) {
 /* Smartphone */
+article {
+  height: 100vh;
+}
 
 }
 
 @media screen and (min-width: 768px) and (max-width: 992px) {
 /* Tablet */
+article {
+  width: 768px;
+}
+
 
 }
 

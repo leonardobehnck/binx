@@ -1,13 +1,24 @@
 @charset "UTF-8";
 @font-face {
   font-family: 'Confortaa';
-  src: url('../fonts/Comfortaa-Regular.ttf') format('ttf');
+  src: url('../fonts/Comfortaa-Regular.ttf') format('truetype');
 }
+
 :root {
   --bg-color-principal-01: white;
-  --bg-color-principal-02: rgb(180, 180, 180);
-  --bg-color-smartphones: rgb(180, 180, 180);
-  --color-shadow-main: rgba(0, 0, 0, 0.200);
+  --bg-color-principal-02: rgb(220, 220, 220);
+  --bg-color-main: rgb(240, 240, 240);
+  --font-color: rgb(0, 0, 0);
+  --color-main-border: white;
+}
+
+.dark-mode {
+  --bg-color-principal-01: rgb(0, 0, 0);
+  --bg-color-principal-02: rgb(255, 255, 255);
+  --font-color: white;
+  --bg-color-main: black;
+  --color-main-border: white;
+  header img {filter: invert(100%);}
 }
 
 * {
@@ -15,14 +26,15 @@
   padding: 0;
   border: 0;
   box-sizing: border-box;
-  font-family: 'Confortaa-Regular';
+  font-family: 'Confortaa' ;
+  color: var(--font-color);
 }
 
 body,
 html {
   width: 100vw;
   height: 100vh;
-  background: var(--bg-color-smartphones);
+  background: var(--bg-color-main);
 }
 
 main {
@@ -30,11 +42,59 @@ main {
   height: 100vh;
   display: flex;
   justify-content: center;
+  align-items: center;
+}
+
+header img {
+  width: 200px;
+}
+
+header span {
+  float: right;
+  cursor: pointer;
 }
 
 article {
   width: 993px;
-  height: 100vh;
+  height: 80vh;
+  padding: 25px;
   background: var(--bg-color-principal-01);
+  border: solid 1px;
+  border-color: var(--color-main-border);
+}
 
+section {
+  margin: 50px 0 0 0;
+}
+
+p {
+  display: block;
+}
+
+section form input, section form textarea {
+  width: 250px;
+  height: 25px;
+  margin: 10px 0 10px 0;
+  display: block;
+  background-color: var(--bg-color-principal-02);
+}
+
+section form textarea {height: 150px;}
+
+section form button {
+  width: 123px;
+  padding: 5px;
+  cursor: pointer;
+  background-color: var(--bg-color-principal-02);
+}
+
+section form button:hover {
+background-color: black !important;
+color: white !important;
+
+}
+
+footer p {
+  margin: 50px 0 0 0;
+  font-size: small;
 }
