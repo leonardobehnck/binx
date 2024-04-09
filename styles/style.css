@@ -10,7 +10,6 @@
   --bg-color-principal-02: rgb(220, 220, 220);
   --font-color: rgb(0, 0, 0);
   --color-main-border: white;
-  --color-button:black;
 }
 
 .dark-mode {
@@ -19,8 +18,12 @@
   --bg-color-principal-02: rgb(255, 255, 255);
   --font-color: white;
   --color-main-border: white;
-  --color-button: rgb(255, 255, 255);
   header img {filter: invert(100%);}
+  section form button{color: black;}
+  section form button:hover {
+    background-color: rgb(0, 0, 0) !important;
+    color: rgb(255, 255, 255) !important;
+  }
 }
 
 * {
@@ -100,6 +103,7 @@ section form input, section form textarea {
   width: 250px;
   height: 25px;
   margin: 10px 0 10px 0;
+  padding: 5px;
   display: block;
   background-color: var(--bg-color-principal-02);
 }
@@ -114,8 +118,18 @@ section form button {
 }
 
 section form button:hover {
-background-color: black !important;
-color: var(--color-button) !important;
+background-color: rgb(0, 0, 0) !important;
+color: rgb(255, 255, 255) !important;
+}
+
+section#social_network  {
+  margin: 25px 0 0 0;
+  padding: 0 0 0 10px;
+}
+
+section#social_network img {
+  width: 60px;
+  margin: 5px;
 
 }
 
