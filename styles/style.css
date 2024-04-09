@@ -5,19 +5,21 @@
 }
 
 :root {
+  --bg-color-main: rgb(240, 240, 240);
   --bg-color-principal-01: white;
   --bg-color-principal-02: rgb(220, 220, 220);
-  --bg-color-main: rgb(240, 240, 240);
   --font-color: rgb(0, 0, 0);
   --color-main-border: white;
+  --color-button:black;
 }
 
 .dark-mode {
+  --bg-color-main: black;
   --bg-color-principal-01: rgb(0, 0, 0);
   --bg-color-principal-02: rgb(255, 255, 255);
   --font-color: white;
-  --bg-color-main: black;
   --color-main-border: white;
+  --color-button: rgb(255, 255, 255);
   header img {filter: invert(100%);}
 }
 
@@ -32,14 +34,11 @@
 
 body,
 html {
-  width: 100vw;
-  height: 100vh;
   background: var(--bg-color-main);
 }
 
 main {
   width: 100vw;
-  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -55,21 +54,47 @@ header span {
 }
 
 article {
-  width: 993px;
-  height: 80vh;
+  width: 793px;
+  margin: 3% 0 3% 0;
   padding: 25px;
   background: var(--bg-color-principal-01);
   border: solid 1px;
   border-color: var(--color-main-border);
 }
 
-section {
+#content {
+  display: flex;
+  justify-content: space-between;
+}
+
+section#form {
+  width: 275px;
+  display: flex;
   margin: 50px 0 0 0;
 }
 
-p {
-  display: block;
+iframe {
+  width: 400px;
+  height: 650px;
+  margin: 50px 0 0 0;
+  overflow: hidden;
+  border: none;
+  display: flex;
 }
+
+blockquote {
+  background: white;
+  max-width: 450px;
+  width: calc(100% - 2px);
+  border-radius: 3px;
+  border: 1px solid rgb(219, 219, 219);
+  box-shadow: none;
+  display: block;
+  margin: 25px;
+  min-width: 326px;
+  padding: 0px;
+}
+
 
 section form input, section form textarea {
   width: 250px;
@@ -90,7 +115,7 @@ section form button {
 
 section form button:hover {
 background-color: black !important;
-color: white !important;
+color: var(--color-button) !important;
 
 }
 

@@ -11,6 +11,10 @@ article {
   height: 100vh;
 }
 
+iframe {
+  display: none;
+}
+
 }
 
 @media screen and (min-width: 768px) and (max-width: 992px) {
