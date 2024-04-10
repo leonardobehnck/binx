@@ -7,23 +7,14 @@
 
 @media screen and (max-width: 768px) {
 /* Smartphone */
-article {
-  height: 100vh;
-}
-
-iframe {
-  display: none;
-}
-
+article {width: 400px;}
+iframe {display: none;}
 }
 
 @media screen and (min-width: 768px) and (max-width: 992px) {
 /* Tablet */
-article {
-  width: 768px;
-}
-
-
+article {width: 560px;}
+iframe {display: none;}
 }
 
 @media screen and (min-width: 992px) {

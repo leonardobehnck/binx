@@ -35,9 +35,12 @@
   color: var(--font-color);
 }
 
-body,
-html {
+body {
   background: var(--bg-color-main);
+}
+
+h3 {
+  font-size: 1.13em;
 }
 
 main {
@@ -62,6 +65,7 @@ article {
   padding: 25px;
   background: var(--bg-color-principal-01);
   border: solid 1px;
+  border-radius: 10px;
   border-color: var(--color-main-border);
 }
 
@@ -124,13 +128,12 @@ color: rgb(255, 255, 255) !important;
 
 section#social_network  {
   margin: 25px 0 0 0;
-  padding: 0 0 0 10px;
+  padding: 0;
 }
 
 section#social_network img {
-  width: 60px;
-  margin: 5px;
-
+  width: 45px;
+  filter: invert(100%);
 }
 
 footer p {
