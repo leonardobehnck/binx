@@ -74,13 +74,18 @@ article {
   justify-content: space-between;
 }
 
+p {
+  font-size: 1em;
+  padding: 0 20px 0 0;
+}
+
 section#form {
   width: 275px;
   display: flex;
   margin: 50px 0 0 0;
 }
 
-iframe {
+#instagram-media {
   width: 400px;
   height: 650px;
   margin: 50px 0 0 0;

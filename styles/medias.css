@@ -8,13 +8,13 @@
 @media screen and (max-width: 768px) {
 /* Smartphone */
 article {width: 400px;}
-iframe {display: none;}
+#instagram-media {display: none;}
 }
 
 @media screen and (min-width: 768px) and (max-width: 992px) {
 /* Tablet */
 article {width: 560px;}
-iframe {display: none;}
+#instagram-media {display: none;}
 }
 
 @media screen and (min-width: 992px) {
